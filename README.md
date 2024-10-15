@@ -23,12 +23,19 @@ Esta API foi desenvolvida para gerenciar informações de candidatos a vagas em 
 
 ## Endpoints da API
 GET /curriculos: Retorna a lista de todos os candidatos.
+
 POST /curriculos: Adiciona um novo candidato.
+
 GET /curriculos/{id}: Retorna um candidato pelo seu ID.
+
 PUT /curriculos/{id}: Atualiza as informações de um candidato.
+
 DELETE /curriculos/{id}: Remove um candidato.
+
 GET /curriculos/vaga/ANALISTA: Filtra candidatos por vaga desejada.
+
 GET /curriculos/escolaridade/GRADUACAO: Filtra candidatos por escolaridade.
+
 GET /curriculos/status/APROVADO: Filtra candidatos por status do currículo.
 
 ## Estrutura do Projeto
