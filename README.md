@@ -32,23 +32,23 @@ GET /curriculos/escolaridade/GRADUACAO: Filtra candidatos por escolaridade.
 GET /curriculos/status/APROVADO: Filtra candidatos por status do currículo.
 
 ## Estrutura do Projeto
-# Modelos
+### Modelos
 *Candidato:* Representa os dados dos candidatos.
 *Enums:*
 *Escolaridade:* [MEDIO, FUNDAMENTAL, GRADUACAO, POS_GRADUACAO, ESPECIALIZACAO]
 *VagaDesejada:* [ANALISTA, QA, DEV, TECH_LEAD, SUPORTE, UX]
 *StatusCurriculo:* [EM_ANALISE, REPROVADO, APROVADO]
 
-## DTO
+### DTO
 O DTO é usado para transferir dados entre as camadas da API, evitando vazamentos de informações e separando a lógica de negócios da apresentação.
 
-## Repositório
+### Repositório
 O repositório fornece a camada de abstração para interagir com o banco de dados, realizando operações CRUD e consultas personalizadas (Derived Queries) para filtrar candidatos por vaga e escolaridade.
 
-## Serviço
+### Serviço
 O serviço contem a lógica de negócios, incluindo a manipulação de currículos, adição de novos candidatos e atualizações de status.
 
-Controlador
+### Controlador
 O controlador recebe as requisições HTTP e delegam a execução para os serviços apropriados, retornando os resultados em formato JSON.
 
 
